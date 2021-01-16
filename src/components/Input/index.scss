@@ -1,0 +1,53 @@
+@import 'config/variables.scss';
+
+.alt-input {
+  position: relative;
+
+  label {
+    color: $black200;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  input {
+    height: 60px;
+    background: $whiteBg;
+    border: none;
+    padding: 0 20px;
+    color: $grey500;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  input::placeholder {
+    color: $grey300;
+  }
+  input:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.left {
+  & span {
+    position: absolute;
+    top: 26%;
+    left: 17px;
+  }
+  & input {
+    padding-left: 40px;
+    width: 100%;
+  }
+}
+
+.right {
+  & span {
+    position: absolute;
+    top: 26%;
+    right: 17px;
+  }
+  & input {
+    padding-left: 23px;
+    width: 100%;
+  }
+}

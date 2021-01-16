@@ -1,0 +1,35 @@
+.home{
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  .intro{
+    color: #ffffff;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  &__main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:10px;
+  }
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  li{
+    margin: 0 10px;
+    a{
+      color: #919191;
+    }
+  }
+  li.active{
+    a{
+
+      color: #64b542;
+      font-weight: 700;
+    }
+  }
+}
