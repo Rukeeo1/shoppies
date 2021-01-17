@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div className="home">
       <p className="intro">
-        This is home is my submission for the Shopify Take Home Assignment for
+        This is my submission for the Shopify Take Home Assignment for
         Frontend Interns. Hover over any of the movies to Nominate your favorite
         Movie. Click on Nominations on the navigation, to see the lists of
         nominated movies. You can only nominate 5 movies and you can't nominate
