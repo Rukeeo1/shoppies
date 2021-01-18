@@ -78,12 +78,12 @@ export const MoviesContextProvider = ({ children }) => {
     const updatedMovieList = nominatedMovies.filter(
       (movie) => movieToRemove.imdbID !== movie.imdbID
     );
+    console.log(updatedMovieList,'updated movies')
     localStorage.setItem('nominatedMovies', JSON.stringify(updatedMovieList));
     setNominatedMoviesList(updatedMovieList);
   };
 
   const handlePageChange = (pageNumber) => {
-    console.log(pageNumber)
     setCurrentPage(pageNumber)
   };
 

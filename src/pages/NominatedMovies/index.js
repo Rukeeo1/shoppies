@@ -12,7 +12,7 @@ export default function NominatedMovies() {
 
   return (
     <div className="nominated__movies">
-      {nominatedMoviesList.length > 1
+      {nominatedMoviesList.length > 0
         ? nominatedMoviesList.map((movie) => (
             <Card
               key={movie.imdbID}
@@ -21,7 +21,9 @@ export default function NominatedMovies() {
               handleClick={() => removeMovieFromNominations(movie)}
             />
           ))
-        : null}
+        : <div className="d-flex align-items-center justify-content-center" style={{height:150, color:'white'}}>
+          <p>You haven't nominated any movies yet</p>
+          </div>}
     </div>
   );
 }
